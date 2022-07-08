@@ -90,7 +90,7 @@ app.post('/send', (req, res) => {
 
         const mailOptions = {
             from: `${req.body.email}`,
-            to: 'leticia.uram@gmail.com',
+            to: 'sarkany.roland@outclass.hu',
             subject: 'Sim-kártya információ',
             html: `<p>Név: ${req.body.name}</p><p>E-mail: ${req.body.email}</p><p>Sim: ${req.body.type}<p>`,
         }
