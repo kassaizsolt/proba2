@@ -1,0 +1,897 @@
+//Fejlec megvalositasa
+header{
+    background-color: #00b26b;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    z-index: 3;
+    height: 80px;
+    padding: 0px 0px;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu{
+    margin-top: 28px;
+    margin-right: 26.66%;
+    padding: 0px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.menu ul li{
+    list-style: none;
+    color: white;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logo{
+    float: left;
+    margin-left: 80%;
+    width: 105px;
+    margin-top: 2px;
+}
+
+
+
+//Hero megvalositasa
+#hero{
+    background-image: url("../../../assets/images/proba-back-1.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+#herosz{
+   margin-left: 20%;
+   margin-bottom: 20vh;
+   color: white;
+}
+
+#herob{
+    width: 180px;
+    margin-top: 50px;
+    background: #00b26b;
+    border: 0;
+    font-weight: bold;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 2.3;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .10s ease-in-out;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+#herosz h2{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#herosz p{
+    margin: 0;
+}
+
+#section1{
+    height: 80px;
+}
+
+#section2{
+    height: 80px;
+    align-self: flex-end;
+}
+
+#section3{
+    height: 80px;
+    align-self: flex-end;
+}
+
+
+
+//Keszulekek es top megvalositasa
+.rows{
+    height: 50vh;
+    display: flex;
+}
+
+.balszoveg{
+    margin-left: 40%;
+}
+
+#keszulekeksz{
+    margin-top: 8vh;
+    color: #202428;
+    font-weight: 500;
+}
+
+h2, h3, h4{
+    margin: 0;
+    font-weight: 700;
+}
+
+#keszulekeksz img{
+    height:45px;
+}
+
+#keszulekeksz img:hover{
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+}
+
+table {
+  border-collapse:separate; 
+  border-spacing: 0 1.2em;
+}
+
+.phones{
+    margin-left: 14%;
+}
+
+
+#top{
+    background-color: #171b31;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    text-align: right;
+}
+
+.jobbszoveg{
+    margin-right: 40%;
+}
+
+#topsz{
+    margin-top: 8vh;
+}
+
+#topsz h2{
+    margin-bottom: 10px;
+    color: white;
+}
+
+#topsz ul {
+    padding: 0;
+    margin: 0;
+}
+
+#topsz ul li{
+    list-style: none;
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+#topsz ul li::before {
+    content: "\2022";
+    color: #00b26b;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1.2em;
+    margin-left: -0.6em;
+    margin-right: 0.6em;
+  }
+
+#topb{
+    width: 200px;
+    margin-top: 20px;
+    background: #171b31;
+    border: 3px solid white;
+    font-weight: bold;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 2;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .10s ease-in-out;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+
+
+//Cseng es telefon megvalositasa
+#cseng{
+    background-color: #00b26b;
+}
+
+#csengsz{
+    margin-top: 13vh;
+    color: white;
+    font-weight: 500;
+}
+
+#csengsz p {
+    margin: 0;
+    animation:4s shake infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: skewX(-15deg); }
+    3% { transform: skewX(15deg); }
+    6% { transform: skewX(-15deg); }
+    9% { transform: skewX(15deg); }
+    12% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+  }
+
+
+#csengsz h3{
+    margin-top: 15px;
+}
+
+#telefon img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+//Premium megvalositasa
+#premium{
+    background-image: url("../../../assets/images/proba-back-2.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 70vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+.mindketto{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#premiumsz{
+    margin-top: 25vh;
+    color: white;
+    width: 100%;
+}
+
+#premiumsz p{
+    font-size: 20px;
+    margin: 0;
+}
+
+#images{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#bal{
+    width: 140px;
+    float: left;
+}
+
+#kozep{
+    width: 140px;
+}
+
+#jobb{
+    float: right;
+    width: 140px;
+}
+
+
+
+//Nepszeru megvalositasa
+#nepszeru{
+    background-color: white;
+    color: #202428;;
+    display: flex;
+    font-weight: 500;
+
+}
+#nepszerusz{
+    align-self: center;
+}
+
+.diagramm{
+    background-color: #171b31;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    text-align: right;
+}
+
+#diagrammsz{
+    margin-bottom: 5vh;
+}
+
+
+.diagramm tbody th{
+    color:white;
+}
+
+.diagramm tbody td{
+    color:white;
+}
+
+.diagramm-animation tbody td{
+    transform-origin: bottom;
+    animation: revealing-bars 8s linear;
+}
+
+#data{
+    --color: white;
+}
+#data.column{
+    width: 325px;
+
+}
+
+@keyframes revealing-bars {
+    0%  { transform: scaleY( 0 ); }
+    15% { transform: scaleY( 1 ); }
+  }
+
+
+
+//SIM megvalositas
+#SIM{
+    height: 70vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+#SIMsz{
+    width: 100%;
+    margin-top: 7.5vh;
+    color:#202428
+}
+
+.also{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#main{
+    width: 100px;
+    
+}
+
+#textrow{
+    width: 100%;
+    display: flex;
+}
+
+#textbox1{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#textbox2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#textinput2{
+    float: right;
+    width: 60px;
+}
+
+input[type=text], input[type=email] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.label{
+    margin-right: 8%;
+    margin-bottom: 25px;
+}
+
+input[type="radio"] {
+	appearance: none;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+    cursor: pointer;
+	background-clip: content-box;
+	padding: 2.5px;
+}
+
+input[type="radio"]:checked {
+	background-color: #00b26b;
+}
+
+.radiosz{
+    margin-left: 12px;
+}
+
+#photo{
+    margin-bottom: 25px;
+}
+#photo label{
+    font-weight: bolder;
+    margin-bottom: 7px;
+}
+
+#simb{
+    width: 150px;
+    background: #00b26b;
+    margin-top: 10px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 2.8;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .10s ease-in-out;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+
+
+//Footer megvalositas
+footer{
+    background-color: #171b31;
+    height: 80px;
+}
+
+.logo2{
+    float: left;
+    margin-left: 80%;
+    width: 105px;
+    margin-top: 3px;
+}
+
+#footersz{
+color: white;
+margin-right: 26.66%;
+display:flex;
+float: right;
+justify-content: center;
+align-items: center;
+
+}
+
+#footerp{
+    font-size: 12px;
+}
+
+#footerb{
+    width: 180px;
+    margin-top: 25px;
+    margin-left: 30px;
+    background: #00b26b;
+    border: 0;
+    font-weight:500;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: medium;
+    line-height: 1.9;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .10s ease-in-out;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+#adat{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#underline{
+    text-decoration: underline;
+}
+
+
+
+
+
+//Reszponzivitas erdekeben modositasok (mindenfele meretben mukodik)
+@media only screen and (max-width: 1340px) {
+    .menu ul li{
+        margin-left: 15px;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .logo{
+        margin-left: 60%;
+        width: 80px;
+    }
+    
+    header{
+        height: 60px;
+    }
+
+    #section1{
+        height: 59px;
+    }
+    #section2{
+        height: 59px;
+    }
+    #section3{
+        height: 59px;
+    }
+
+    .menu{
+        margin-right: 26.66%;
+        margin-top: 17px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .menu{
+        margin-right: 13.33%;
+    }
+    
+    .balszoveg{
+        margin-left: 20%;
+    }
+
+    .jobbszoveg{
+        margin-right: 20%;
+    }
+
+    .logo{
+        margin-left: 40%;
+    }
+
+    .mindketto{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #herosz{
+        margin-left: 10%;
+    }
+
+    .logo2{
+        margin-left: 40%;
+        width: 80px;
+    }
+
+    #footersz{
+        margin-right:13.33%;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .menu{
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 0;
+    }
+
+    .logo2{
+        margin-left: 0;
+    }
+
+    #footersz{
+        margin-right:0;
+    }
+
+    #diagrammsz{
+        margin-right: 1%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 650px) {
+
+    .menu{
+        position: fixed;
+        right: -160px;
+        top: 30px;
+        width: 160px;
+        height: 100%;
+        background: #00b26b;
+    }
+
+    .menu ul li{
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 10px 0 10px 26px;
+        border-bottom: 1px solid white
+    }
+
+    .menu_icon{
+        display: inline-block;
+        position:relative;
+        right: 0;
+        top: 20px;
+    }
+
+    .menu_icon span{
+        width: 32px;
+        height: 3px;
+        background-color: white;
+        display: block;
+    }
+
+    .menu_icon span:nth-child(2){
+        margin: 3px 0;
+    }
+
+    .menuClass{
+        right: 0;
+        transition: 0.2s ease-in-out;
+    }
+
+    #hero{
+        height: 40vh;
+    }
+
+    #herosz{
+        margin-bottom: 5vh;
+    }
+
+    #herosz h2{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #herosz p{
+        font-size: smaller;
+    }
+
+    .rows{
+        height: 25vh;
+    }
+
+    #keszulekek {
+        align-self: center;
+    }
+
+    #keszulekeksz{
+        margin-top: 5%;
+        font-size:  50%;
+    }
+
+    #keszulekek h2{
+        font-size: medium;
+    }
+    
+    #keszulekeksz img{
+        height: 25px;
+    }
+
+    #top{
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    #topsz{
+        text-align: center;
+        margin-top: 0vh;
+    }
+
+    #topsz ul li{
+        display:ruby-base;
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    #topsz h2{
+        font-size: medium;
+        margin-bottom: 6%;
+    }
+
+    #topb{
+        margin-top: 10%;
+        width: 130px;
+        font-size: 10px;
+
+    }
+
+    #top .jobbszoveg{
+        margin-right: 5%;
+    }
+
+
+    #csengsz{
+        margin-top: 25%;
+        font-size: small;
+    }
+
+    #cseng .balszoveg{
+        margin-left: 10%
+    }
+
+    #csengsz h3{
+        font-size: medium;
+    }
+
+    #csengsz p{
+        font-size: 10px;
+    }
+
+    #topsz ul li::before {
+        color: #171b31;
+        content:none;
+
+    }
+
+    #nepszerusz h2{
+        font-size: medium;
+    }
+
+    #nepszerusz p{
+        font-size: 10px;
+    }
+
+    #diagrammsz{
+        margin-right: 5%;
+    }
+
+    #data.column{
+        max-width: 150px;
+    }
+
+    .diagramm tbody th{
+        font-size: 10px;
+    }
+
+    #premium{
+        height: 30vh;
+    }
+
+    #premiumsz{
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    #premiumsz p{
+        text-align: center;
+    }
+
+
+    #jobb{
+        width: 0;
+    }
+
+    #bal{
+        width: 0;
+    }
+
+    #footerb{
+        margin-top: 0;
+        margin-left: 10px;
+        font-size: 10px;
+        width: 140px;
+    }
+
+    #footerp{
+        font-size: 10px;
+    }
+
+    
+ 
+
+
+    /*
+
+    .rows{
+        height: 100vh;
+       display: inline-block;
+    }
+
+    #keszulekek{
+        width: 100%;
+    }
+
+    #keszulekeksz{
+        height: 50vh;
+    }
+
+    #top{
+        width: 100%;
+    }
+
+    #topsz{
+        height: 50vh;
+    }
+
+    #cseng{
+        width: 100%;
+    }
+
+    #csengsz{
+        height: 50vh;
+    }
+
+    #telefon{
+        width: 100%;
+        height: 50vh;
+    }
+
+
+    #nepszeru{
+        width: 100%;
+    }
+
+    #nepszerusz{
+        height: 50vh;
+    }
+
+    #diagramm{
+        width: 100%;
+    }
+    #diagrammsz{
+        height: 50vh;
+    }
+
+    .col-6 {
+        flex: 0 0 auto;
+        width:100%
+    }
+
+    .col-6[_ngcontent-mfs-c48] {
+        width: 0%;
+        flex: 0;
+    }
+    
+
+
+    #sim{
+        height: 35vh;
+    }
+*/
+
+
+
+
+  
+}

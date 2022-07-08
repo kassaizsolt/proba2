@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "proba-landing-2022": {
+      "hosting": {
+        "proba": [
+          "proba-landing-2022"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "proba-landing-2022"
+  }
+}

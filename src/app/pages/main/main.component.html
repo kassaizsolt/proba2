@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+</head>
+
+
+<body id="fooldalbody">
+
+<header>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1 col-1">
+        <div class="logo">
+          <img routerLink="/admin" src="../assets/images/hsa-logo-white.svg">
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11 col-11 text-end">
+        <div class="menu_icon" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu" [class.menuClass]="menuVariable">
+          <ul>
+            <li (click)="toSection1()">Készülékek</li>
+            <li (click)="toSection1()">Top márkák</li>
+            <li (click)="toSection2()">Ismerősen cseng?</li>
+            <li (click)="toSection3()">Prémium lehetőségek</li>
+            <li (click)="toSIM()">SIM-kártya adatok</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</header>
+
+
+
+<main>
+    <div id="fooldaldiv">
+      <div  [ngStyle]="{'background-image' : 'url(' + hatter + ')'}" id="hero">
+        <div id = herosz>
+          <h2>Telefonos kisokos</h2>
+          <p>A telefonálás az a cselekvés vagy az a pillanat, amikor telefonon beszélünk valakivel.</p>
+          <button id ="herob" (click)="toSIM()">SIM adataim.</button>
+        </div>
+        <span id="section1"></span>
+      </div>
+
+      
+      <div class="rows">
+        <div id="keszulekek" class=" col-md-6 col-sm-6 col-6">
+          <div id = keszulekeksz class="balszoveg">
+            <h2>Készülékek</h2>
+            <table>
+              <tr>
+                <td>
+                  <img class="phonesi"src="../assets/images/proba-iphone.png">
+                </td>
+                <td>
+                  <p class="phones">iPhone</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="phonesi" src="../assets/images/proba-oldphone.png">
+                </td>
+                <td>
+                  <p class="phones">oldPhone</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="phonesi" src="../assets/images/proba-nophone.png">
+                </td>
+                <td>
+                  <p class="phones">noPhone</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id ="top" class=" col-md-6 col-sm-6 col-6 text-left">
+          <div id="topsz" class="jobbszoveg">
+            <h2>Top márkák</h2>
+            <ul>
+              <li>Apple</li>
+              <li>Samsung</li>
+              <li>Google</li>
+              <li>Huawei</li>
+              <li>OnePlus</li>
+            </ul>
+            <ul>
+              <li>Xiaomi</li>
+              <li>LG</li>
+              <li>Oppo</li>
+              <li>Vivo</li>
+              <li>Nokia</li>
+            </ul>
+            <button id="topb" (click)="toSection3()">Prémium lehetőség.</button>
+          </div>
+          <span id="section2"></span>
+        </div>
+      </div>
+
+
+      <div class="rows">
+        <div id="cseng" class=" col-md-6 col-sm-6 col-6 text-left">
+          <div id="csengsz" class="balszoveg">
+            <p>Bzzt! Bzzt!</p>
+            <p>Rrrrrring! Bbbrrrring!</p>
+            <p>Ching ching!</p>
+            <h3>Ismerősen cseng?</h3>
+          </div>
+        </div>
+        <div id ="telefon" class=" col-md-6 col-sm-6 col-6 text-left">
+          <img src="../assets/images/proba-phone.jpg">
+        </div>
+      </div>
+
+
+      <div class="rows animation">
+        <div id="nepszeru" class=" col-md-6 col-sm-6 col-6">
+          <div id="nepszerusz" class="balszoveg">
+            <h2>Hatalmas népszerűség.</h2>
+            <p>Köszönjük, hogy velünk vagytok.</p>
+          </div>
+          <span id="section3"></span>
+        </div>
+        <div class="diagramm animation col-md-6 col-sm-6 col-6">
+          <div id="diagrammsz" class="jobbszoveg">
+            <table id="my-chart" class="charts-css column data-spacing-5 show-labels" id="data">
+              <tbody>
+                <tr>
+                  <th scope="row">2018</th>
+                  <td style="--size: 0.07"></td>
+                </tr>
+                <tr>
+                  <th scope="row">2019</th>
+                  <td style="--size: 0.14"></td>
+                </tr>
+                <tr>
+                  <th scope="row">2020</th>
+                  <td style="--size: 0.24"></td>
+                </tr>
+                <tr>
+                  <th scope="row"> 2021 </th>
+                  <td style="--size: 0.5"></td>
+                </tr>
+                <tr>
+                  <th scope="row">2022</th>
+                  <td style="--size: 0.8"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+       
+
+      <div id="premium">
+        <div id = "premiumsz" class="mindketto">
+          <p>Kelet-magyarországi teljes lefedettség. Hosszú üzemidő.</p>
+          <h2>Prémium lehetőség.</h2>
+          <div id="images">
+            <img id="bal" src="../assets/images/hsa-logo-white.svg">
+            <img id="kozep" src="../assets/images/hsa-logo-white.svg">
+            <img id="jobb" src="../assets/images/hsa-logo-white.svg">
+          </div>
+        </div>
+      </div>
+
+
+      <div id="SIM">
+        <div id="SIMsz" class="mindketto">
+          <h2>SIM-kártya adatok</h2>
+          <p class="simp">Számunkra fontos a segítséged.</p>
+          <form [formGroup]="simForm" autocomplete="off" method="POST" enctype="multipart/form-data">
+            <div id="textrow">
+              <div id="textbox1" class="col-md-6 col-sm-6 col-6">
+                <input type="text" id="name" name="name" formControlName="name" placeholder="Név">
+              </div>
+              <div id="textbox2" class="col-md-6 col-sm-6 col-6 text-end">
+                <input type="email" id="email" name="email" formControlName="email" placeholder="E-mail cím">
+              </div>
+            </div>
+            <div>
+              <fieldset>
+                <label class = label>
+                  <input type="radio" id="type" name="type" formControlName="type" value="Standard">
+                  <span class="radiosz">Standard</span>
+                </label>
+                <label class="label" >
+                  <input type="radio" id="type" name="type" formControlName="type" value="Micro">
+                  <span class="radiosz">Micro</span>
+                </label>
+                <label class="label">
+                  <input type="radio" id="type" name="type" formControlName="type" value="Nano">
+                  <span class="radiosz">Nano</span>
+                </label>
+              </fieldset>
+            </div>
+              <div id="photo" class="also">
+                <label>Lepj meg minket egy tetszőleges képpel!</label><br>
+                <input #fileInput type="file" id="image" formControlName="image" name="image" >
+              </div>
+              <div class="also">
+                <p>A "Küldés" gombra kattintva elfogadod az <span id="underline">adatkezelési tájékozató</span>ban foglaltakat.</p>
+              </div>
+              <div>
+                <button id="simb" type="submit" (click)="submitData($event)">Küldés ></button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</main>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+      <div class="logo2">
+        <img src="../assets/images/hsa-logo-white.svg">
+      </div>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-9 text-end">
+      <div id="footersz">
+        <div id="footerp">
+          <p id="adat">Adatkezelési tájékozatató</p>
+          <p>Copyright ©2022 Minden jog fenntartva.</p>
+        </div>
+        <button id="footerb" (click)="toStart()">Újra látni akarom.</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
